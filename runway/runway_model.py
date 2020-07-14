@@ -10,7 +10,7 @@ with open("class_names.txt", "r") as ins:
     class_names.append(line.rstrip('\n'))
 
 # Load the model
-model = keras.models.load_model('doodleNet-model.h5')
+model = keras.models.load_model('doodleNet-model.h5', compile=False)
 model.summary()
 
 # open a local image

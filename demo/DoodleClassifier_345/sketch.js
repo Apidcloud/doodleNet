@@ -62,6 +62,7 @@ function getInputImage() {
   let oneRow = [];
   for (let i = 0; i < IMAGE_SIZE; i++) {
     let bright = img.pixels[i * 4];
+    console.log(bright);
     let onePix = [parseFloat((255 - bright) / 255)];
     oneRow.push(onePix);
     if (oneRow.length === 28) {
